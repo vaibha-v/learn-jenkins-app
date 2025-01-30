@@ -13,8 +13,9 @@ pipeline {
                 sh '''
                     echo 'Hello World with docker'
                     ls -la
-                    node -v 
-                    nmp -v
+                    node -version 
+                    npm --version
+                    npm ci
                     npm run build
                     ls -la
                 '''
